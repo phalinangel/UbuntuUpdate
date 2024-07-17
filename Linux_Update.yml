@@ -14,7 +14,7 @@
 - name: Update the Unifi Control software
   hosts: unifi.cerberusnet.net
   tasks:
-    - name: Task 1
+    - name: Update the Unifi Control software
       apt:
         name: unifi
         state: latest
