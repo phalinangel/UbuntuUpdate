@@ -6,8 +6,14 @@
     - name: Update apt cache
       apt:
         update_cache: yes
+
+    - name: Upgrade all packages to the latest version
+      apt:
         upgrade: yes
 
-#    - name: Upgrade all packages to the latest version
-#      apt:
-#        upgrade: dist
+- name: Update the Unifi Control software
+  hosts: unifi
+  tasks:
+    - name: Update the Unifi Control software
+      apt: 
+        install: unifi -y
