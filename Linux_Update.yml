@@ -10,11 +10,3 @@
     - name: Upgrade all packages to the latest version
       apt:
         upgrade: yes
-
-- name: Update the Unifi Control software
-  hosts: unifi.cerberusnet.net
-  tasks:
-    - name: Update the Unifi Control software
-      apt:
-        name: unifi
-        state: latest
