@@ -12,7 +12,7 @@
         upgrade: yes
 
 - name: Update the Unifi Control software
-  hosts: unifi
+  hosts: unifi.cerberusnet.net
   tasks:
     - name: Update the Unifi Control software
       apt: 
