@@ -9,5 +9,5 @@
     password: {{emailPassword}}
     to: {{targetemail}}
     subject: Ansible-report
-    body: System {{ ansible_hostname }} has been successfully provisioned.
+    body: Test Email
   delegate_to: localhost
