@@ -5,9 +5,9 @@
   community.general.mail:
     host: smtp.gmail.com
     port: 587
-    username: {{emailUser}}
-    password: {{emailPassword}}
-    to: {{targetemail}}
+    username: "{{emailUser}}"
+    password: "{{emailPassword}}"
+    to: "{{targetemail}}"
     subject: Ansible-report
     body: Test Email
   delegate_to: localhost
