@@ -6,6 +6,7 @@
       community.general.mail:
         host: smtp-mail.outlook.com
         port: 587
+        secure: starttls
         username: "{{emailUser}}"
         password: "{{emailPassword}}"
         to: "{{targetemail}}"
