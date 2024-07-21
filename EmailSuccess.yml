@@ -4,7 +4,7 @@
   tasks:
     - name: Sending email
       community.general.mail:
-        host: smtp.gmail.com
+        host: smtp-mail.outlook.com
         port: 587
         username: "{{emailUser}}"
         password: "{{emailPassword}}"
