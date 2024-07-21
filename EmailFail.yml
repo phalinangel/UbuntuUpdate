@@ -1,11 +1,12 @@
 - name: Sending an e-mail using Gmail SMTP servers
   hosts: localhost
   tasks:
-    community.general.mail:
-      host: smtp.gmail.com
-      port: 587
-      username: "{{emailUser}}"
-      password: "{{emailPassword}}"
-      to: "{{targetemail}}"
-      subject: Ansible-report
-      body: Test Email
+    - name: Sending email
+      community.general.mail:
+        host: smtp.gmail.com
+        port: 587
+        username: "{{emailUser}}"
+        password: "{{emailPassword}}"
+        to: "{{targetemail}}"
+        subject: Ansible-report
+        body: Test Email
