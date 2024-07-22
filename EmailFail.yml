@@ -7,8 +7,8 @@
         host: smtp.google.com
         port: 587
         secure: starttls
-        username: "{{emailUser}}"
-        password: "{{emailPassword}}"
-        to: "{{targetemail}}"
+        username: "{{ emailUser }}"
+        password: "{{ emailPassword }}"
+        to: "{{ targetemail }}"
         subject: Ansible-report
         body: Test Email
