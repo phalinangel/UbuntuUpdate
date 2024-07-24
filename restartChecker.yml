@@ -1,0 +1,7 @@
+---
+- name: Ubuntu Restart Checker
+  hosts: all
+  become: yes
+  tasks:
+    - name: Checking if system(s) need a Restart
+        
