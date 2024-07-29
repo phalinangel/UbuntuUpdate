@@ -4,9 +4,9 @@
   tasks:
     - name: Sending email
       community.general.mail:
-        host: smtp.google.com
-        port: 587
-        secure: starttls
+        host: outlook.office365.com
+        port: 993
+        #secure: starttls
         username: "{{ emailUser }}"
         password: "{{ emailPassword }}"
         to: "{{ targetemail }}"
