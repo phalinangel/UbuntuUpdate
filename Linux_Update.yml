@@ -11,3 +11,6 @@
       apt:
         upgrade: yes
 
+    - name: Reboot if required
+      reboot:
+      when: reboot_required_file.stat.exists == true
